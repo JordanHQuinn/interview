@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - WizardDaoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>WizardDaoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.octanner.interview.darkwizard.html">com.octanner.interview.darkwizard</a> &gt; WizardDaoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.293s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Harry Potter should be listed 4th and have cast 2 spells</td>
+<td class="success">testHarryPotter()</td>
+<td class="success">0.226s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Hermione Granger should not be in the list</td>
+<td class="success">testHermioneGranger()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Testing if you can compare lists of objects</td>
+<td class="success">testTomIsFirst()</td>
+<td class="success">0.056s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Tom Riddle should be listed first and have cast 16 spells</td>
+<td class="success">testTomRiddle()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Count of wizards that use unforgivable curses</td>
+<td class="success">testWizardResultCount()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-08-12T12:27:10.622-06:00  INFO 37676 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.octanner.interview.darkwizard.WizardDaoTest]: WizardDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-12T12:27:10.635-06:00  INFO 37676 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.octanner.interview.darkwizard.DarkWizardApplication for test class com.octanner.interview.darkwizard.WizardDaoTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.1)
+
+2023-08-12T12:27:10.668-06:00  INFO 37676 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Starting WizardDaoTest using Java 20.0.1 with PID 37676 (started by Jordan Quinn in C:\Users\Jordan Quinn\Downloads\dark-wizard-main\dark-wizard-main)
+2023-08-12T12:27:10.669-06:00  INFO 37676 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-12T12:27:10.815-06:00  INFO 37676 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-12T12:27:10.836-06:00  INFO 37676 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@79d49790
+2023-08-12T12:27:10.837-06:00  INFO 37676 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-12T12:27:10.838-06:00  INFO 37676 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/wizard (PostgreSQL 15.1)
+2023-08-12T12:27:10.859-06:00  INFO 37676 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.009s)
+2023-08-12T12:27:10.898-06:00  INFO 37676 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: 01
+2023-08-12T12:27:10.899-06:00  INFO 37676 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;public&quot; is up to date. No migration necessary.
+2023-08-12T12:27:10.933-06:00  INFO 37676 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Started WizardDaoTest in 0.294 seconds (process running for 5.393)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at Aug 12, 2023, 12:27:11 PM</p>
+</div>
+</div>
+</body>
+</html>

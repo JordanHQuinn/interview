@@ -1,0 +1,40 @@
+@startuml
+!theme reddress-lightblue
+skinparam linetype ortho
+
+!define primary_key(x) <b><color:#b8861b><&key></color> x</b>
+!define foreign_key(x) <color:#aaaaaa><&key></color> x
+!define column(x) <color:#efefef><&media-record></color> x
+!define table(x) entity x << (T, white) >>
+
+table(spell) {
+  primary_key(spell_id): integer
+  column(name): varchar(100)
+  column(spell_type): varchar(100)
+  column(description): varchar(100)
+}
+
+table(wand) {
+  primary_key(wand_id): integer
+  column(wood): varchar(100)
+  column(core): varchar(100)
+  column(length): number(5,2)
+}
+
+table(wizard) {
+  primary_key(wizard_id): integer
+  column(name): varchar(100)
+  column(house): varchar(100)
+  foreign_key(wand_id): integer
+}
+
+table(spell_cast_event) {
+  primary_key(event_id): integer
+  foreign_key(wand_id): integer
+  foreign_key(spell_id): integer
+}
+
+spell_cast_event }o--> spell: spell_id
+spell_cast_event }o--> wand: wand_id
+wizard }o--> wand: wand_id 
+@enduml
