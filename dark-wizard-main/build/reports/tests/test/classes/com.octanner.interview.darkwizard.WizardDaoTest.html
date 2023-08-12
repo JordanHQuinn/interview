@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.805s</div>
+<div class="counter">0.320s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">80%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,135 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="testTomIsFirst()"></a>
-<h3 class="failures">Testing if you can compare lists of objects</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: 
-Expecting actual:
-  [com.octanner.interview.darkwizard.WizardResultData@6d815fb7,
-    com.octanner.interview.darkwizard.WizardResultData@51af8049,
-    com.octanner.interview.darkwizard.WizardResultData@376af784,
-    com.octanner.interview.darkwizard.WizardResultData@a9a8ec3,
-    com.octanner.interview.darkwizard.WizardResultData@6d0114c0]
-to contain exactly (and in same order):
-  [com.octanner.interview.darkwizard.WizardResultData@40016ce1,
-    com.octanner.interview.darkwizard.WizardResultData@203765b2,
-    com.octanner.interview.darkwizard.WizardResultData@7e050be1,
-    com.octanner.interview.darkwizard.WizardResultData@1b47b7f5,
-    com.octanner.interview.darkwizard.WizardResultData@506aa618]
-but some elements were not found:
-  [com.octanner.interview.darkwizard.WizardResultData@40016ce1,
-    com.octanner.interview.darkwizard.WizardResultData@203765b2,
-    com.octanner.interview.darkwizard.WizardResultData@7e050be1,
-    com.octanner.interview.darkwizard.WizardResultData@1b47b7f5,
-    com.octanner.interview.darkwizard.WizardResultData@506aa618]
-and others were not expected:
-  [com.octanner.interview.darkwizard.WizardResultData@6d815fb7,
-    com.octanner.interview.darkwizard.WizardResultData@51af8049,
-    com.octanner.interview.darkwizard.WizardResultData@376af784,
-    com.octanner.interview.darkwizard.WizardResultData@a9a8ec3,
-    com.octanner.interview.darkwizard.WizardResultData@6d0114c0]
-
-	at java.base@20.0.1/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base@20.0.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at app//com.octanner.interview.darkwizard.WizardDaoTest.testTomIsFirst(WizardDaoTest.java:64)
-	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@20.0.1/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -203,40 +81,40 @@ and others were not expected:
 <tr>
 <td class="success">Harry Potter should be listed 4th and have cast 2 spells</td>
 <td class="success">testHarryPotter()</td>
-<td class="success">0.758s</td>
+<td class="success">0.244s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Hermione Granger should not be in the list</td>
 <td class="success">testHermioneGranger()</td>
-<td class="success">0.010s</td>
+<td class="success">0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Testing if you can compare lists of objects</td>
-<td class="failures">testTomIsFirst()</td>
-<td class="failures">0.024s</td>
-<td class="failures">failed</td>
+<td class="success">Testing if you can compare lists of objects</td>
+<td class="success">testTomIsFirst()</td>
+<td class="success">0.059s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Tom Riddle should be listed first and have cast 16 spells</td>
 <td class="success">testTomRiddle()</td>
-<td class="success">0.008s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Count of wizards that use unforgivable curses</td>
 <td class="success">testWizardResultCount()</td>
-<td class="success">0.005s</td>
+<td class="success">0.007s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>18:08:12.292 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.octanner.interview.darkwizard.WizardDaoTest]: WizardDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:08:12.413 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.octanner.interview.darkwizard.DarkWizardApplication for test class com.octanner.interview.darkwizard.WizardDaoTest
+<pre>2023-08-12T12:03:02.125-06:00  INFO 28116 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.octanner.interview.darkwizard.WizardDaoTest]: WizardDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-08-12T12:03:02.137-06:00  INFO 28116 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.octanner.interview.darkwizard.DarkWizardApplication for test class com.octanner.interview.darkwizard.WizardDaoTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -246,19 +124,16 @@ and others were not expected:
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.1)
 
-2023-08-11T18:08:13.091-06:00  INFO 30604 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Starting WizardDaoTest using Java 20.0.1 with PID 30604 (started by Jordan Quinn in C:\Users\Jordan Quinn\Downloads\dark-wizard-main\dark-wizard-main)
-2023-08-11T18:08:13.093-06:00  INFO 30604 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-08-11T18:08:14.163-06:00  INFO 30604 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.16.3 by Redgate
-2023-08-11T18:08:14.164-06:00  INFO 30604 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : See release notes here: https://rd.gt/416ObMi
-2023-08-11T18:08:14.164-06:00  INFO 30604 --- [    Test worker] o.f.c.internal.license.VersionPrinter    : 
-2023-08-11T18:08:14.174-06:00  INFO 30604 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-08-11T18:08:14.368-06:00  INFO 30604 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@72976b4
-2023-08-11T18:08:14.369-06:00  INFO 30604 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-08-11T18:08:14.394-06:00  INFO 30604 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/wizard (PostgreSQL 15.1)
-2023-08-11T18:08:14.446-06:00  INFO 30604 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.029s)
-2023-08-11T18:08:14.490-06:00  INFO 30604 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: 01
-2023-08-11T18:08:14.491-06:00  INFO 30604 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;public&quot; is up to date. No migration necessary.
-2023-08-11T18:08:14.674-06:00  INFO 30604 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Started WizardDaoTest in 2.08 seconds (process running for 3.592)
+2023-08-12T12:03:02.175-06:00  INFO 28116 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Starting WizardDaoTest using Java 20.0.1 with PID 28116 (started by Jordan Quinn in C:\Users\Jordan Quinn\Downloads\dark-wizard-main\dark-wizard-main)
+2023-08-12T12:03:02.175-06:00  INFO 28116 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-08-12T12:03:02.359-06:00  INFO 28116 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-08-12T12:03:02.383-06:00  INFO 28116 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@1a5b7394
+2023-08-12T12:03:02.383-06:00  INFO 28116 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-08-12T12:03:02.385-06:00  INFO 28116 --- [    Test worker] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/wizard (PostgreSQL 15.1)
+2023-08-12T12:03:02.405-06:00  INFO 28116 --- [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+2023-08-12T12:03:02.442-06:00  INFO 28116 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;public&quot;: 01
+2023-08-12T12:03:02.443-06:00  INFO 28116 --- [    Test worker] o.f.core.internal.command.DbMigrate      : Schema &quot;public&quot; is up to date. No migration necessary.
+2023-08-12T12:03:02.513-06:00  INFO 28116 --- [    Test worker] c.o.interview.darkwizard.WizardDaoTest   : Started WizardDaoTest in 0.369 seconds (process running for 5.459)
 </pre>
 </span>
 </div>
@@ -270,7 +145,7 @@ and others were not expected:
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.1.1</a> at Aug 11, 2023, 6:08:16 PM</p>
+<a href="http://www.gradle.org">Gradle 8.1.1</a> at Aug 12, 2023, 12:03:03 PM</p>
 </div>
 </div>
 </body>
